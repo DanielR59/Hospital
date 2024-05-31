@@ -5,7 +5,7 @@ require_once "../../helpers/helpers.php";
 
 // Verificamos si el usuario está logueado y es administrador
 if (!isLogin()) {
-    header("Location: http://localhost/hospital/views/login/login.php");
+    header("Location: /hospital/views/login/login.php");
     exit(); // Detenemos la ejecución del script
 }
 
@@ -27,13 +27,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         // Si la inserción fue exitosa, redirigimos con un mensaje de éxito
         $_SESSION['message_type'] = "success";
         $_SESSION['message'] = "Medicamento agregado correctamente.";
-        header("Location: http://localhost/hospital/views/consultas/medicamento.php");
+        header("Location: /hospital/views/consultas/medicamento.php");
         exit(); // Detenemos la ejecución del script
     } else {
         // Si hubo un error en la inserción, redirigimos con un mensaje de error
         $_SESSION['message_type'] = "error";
         $_SESSION['message'] = "Error al agregar el medicamento: " . mysqli_error($mysqli);
-        header("Location: http://localhost/hospital/views/consultas/medicamento.php");
+        header("Location: /hospital/views/consultas/medicamento.php");
         exit(); // Detenemos la ejecución del script
     }
 }

@@ -5,7 +5,7 @@ $mysqli = new mysqli(
   'localhost',
   'root',
   'usbw',
-  'hospital', 3306
+  'hospital', 3307
 );
 
 if ($mysqli -> connect_errno){

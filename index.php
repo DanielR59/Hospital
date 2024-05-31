@@ -4,7 +4,7 @@
 
 <?php 
     if(!isLogin()){
-        header("Location: http://localhost/hospital/views/login/login.php");
+        header("Location: /hospital/views/login/login.php");
     }
 
     $query = "SELECT * FROM consulta INNER JOIN paciente ON(consulta.idPaciente = paciente.idPaciente)  WHERE idMedico = " . $_SESSION['usuario']['id'];

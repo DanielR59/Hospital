@@ -3,4 +3,4 @@ require_once '../../helpers/helpers.php';
 
 logout();
 
-header("Location: http://localhost/hospital/views/login/login.php");
+header("Location: /hospital/views/login/login.php");

@@ -28,4 +28,4 @@ if(isset($_POST)){
 }
 
 
-header("Location: http://localhost/Hospital/views/login/login.php");
+header("Location: /hospital/views/login/login.php");

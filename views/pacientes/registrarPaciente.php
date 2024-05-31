@@ -3,7 +3,7 @@
 <?php require_once("../../helpers/helpers.php") ?>
 <?php 
     if(!isLogin()){
-        header("Location: http://localhost/hospital/views/login/login.php");
+        header("Location: /hospital/views/login/login.php");
     }
 ?>
 

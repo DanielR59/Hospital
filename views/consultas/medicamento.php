@@ -5,7 +5,7 @@ require_once("../layout/header.php");
 require_once("../../helpers/helpers.php");
 
 if(!isLogin()){
-    header("Location: http://localhost/hospital/views/login/login.php");
+    header("Location: /hospital/views/login/login.php");
 }
 
 // Consulta SQL para obtener los medicamentos
@@ -58,7 +58,7 @@ if (!$resultado) {
         </table>
 
         <div class="container mt-5">
-        <a href="http://localhost/hospital/views/consultas/AddMedicamentos.php" class="btn btn-primary">Agregaar medicamento</a>
+        <a href="/hospital/views/consultas/AddMedicamentos.php" class="btn btn-primary">Agregaar medicamento</a>
         </div>
     </div>
 </body>

@@ -1,7 +1,7 @@
 <?php require_once '../../helpers/helpers.php'; ?>
 <?php require_once '../db/db.php'; ?>
 <?php if(isset($_SESSION['usuario']) && !empty($_SESSION['usuario'])){
-    header("Location: http://localhost/Hospital/index.php");    
+    header("Location: /hospital/index.php");    
 }
 ?>
 <!DOCTYPE html>
